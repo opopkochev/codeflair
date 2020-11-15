@@ -1,0 +1,14 @@
+.hero-section {
+    height: 100%;
+}
+
+.hero-wrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.hero-section .btn--hello-world {
+    animation: hello-world 2s infinite;
+}

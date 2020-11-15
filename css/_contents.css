@@ -1,0 +1,37 @@
+.show-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    padding: 50px 25px;
+}
+
+.content-title {
+    color: var(--base-color);
+    font-size: 1.5rem;
+    padding: 0 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .content-row {
+        align-items: flex-start;
+        display: flex;
+    }
+}
+
+.content-column {
+    padding: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .content-column {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 50%;
+    }
+}
+
+.content-promo > img {
+    display: block;
+    width: 100%;
+}

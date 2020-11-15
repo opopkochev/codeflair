@@ -1,0 +1,5 @@
+@keyframes hello-world {
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}

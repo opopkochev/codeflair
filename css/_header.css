@@ -1,0 +1,144 @@
+.header {
+    background-image: url("../images/mountains.jpg");
+    background-size: cover;
+    height: 60vh;
+    padding: 115px 25px 25px;
+    position: relative;
+}
+
+.header::before {
+    background-color: rgba(0, 0, 0, .65);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        padding: 92px 25px 25px;
+    }
+}
+
+.navbar {
+    align-items: center;
+    background-color: rgba(0, 0, 0, .95);
+    display: flex;
+    left: 0;
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-family: Nunito-BoldItalic;
+}
+
+.navbar-toggler {
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    justify-content: center;
+    margin-left: auto;
+    padding: 5px;
+    width: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+.navbar-toggler 
+> span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    width: 100%;
+}
+
+.navbar-toggler 
+> span:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
+.navbar-list {
+    display: none;
+    margin-left: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-list {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.navbar-toggler.active ~ 
+.navbar-list {
+    background-color: var(--secondary-color);
+    display: block;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-toggler:not(.active) ~
+.navbar-list .navbar-close {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-list-item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.navbar-list-item.navbar-close {
+    height: 35px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 35px;
+}
+
+.navbar-list-item.navbar-close::before,
+.navbar-list-item.navbar-close::after {
+    background-color: #ffffff;
+    content: '';
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.navbar-list-item.navbar-close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navbar-list-item.navbar-close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    -moz-transform: translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    -o-transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+}

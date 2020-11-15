@@ -1,0 +1,53 @@
+@import "./_animations.css";
+@import "../fonts/fonts.css";
+@import "./_header.css";
+@import "./_hero.css";
+@import "./_buttons.css";
+@import "./_contents.css";
+@import "./_footer.css";
+
+:root {
+    --base-font-family: Nunito-Regular;
+    --base-font-size: 16px;
+    --base-color: #3a3a3a;
+    --secondary-color: #0ea2c3;
+    --header-bg-color: #f6f6f6;
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body, ul, p, a {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: var(--base-font-family);
+    font-size: var(--base-font-size);
+    color: var(--base-color);
+}
+
+body.prevent-scroll {
+    overflow: hidden;
+}
+
+.text-right {
+    text-align: right;
+}
